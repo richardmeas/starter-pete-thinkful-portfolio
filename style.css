@@ -1,34 +1,119 @@
+/* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet*/
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
+
+body {
+  background-color: #eae2b7;
+  color: #003049;
+  font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", Times, serif;
+  text-align: center;
+}
+
 /* Header */
 header {
-  display: flex; /* Use flexbox to align items in a row */
-  justify-content: space-between; /* Space between the logo and the nav */
-  align-items: center; /* Vertically center the items */
-  padding: 20px 0; /* Add some padding to the header */
-  max-width: 800px; /* Optional: to limit the header width */
-  margin: 0 auto; /* Center the header horizontally */
+  text-align: center;
 }
 
-/* Logo styling */
-header h1 {
-  margin: 0;
-  font-size: 2em; /* Adjust size of the logo text */
+/* Containers */
+div {
+  background-color: #eae2b7;
+  margin: auto;
+  width: 600px;
 }
 
-/* Navigation links */
-nav {
-  display: flex; /* Align navigation links horizontally */
+article {
+  padding: 50px 0;
+}
+
+article div {
+  text-align: center;
+  width: 100%;
+}
+
+/* Paragraphs */
+p, ul {
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* Links */
+a:link {
+  color: #d62828;
+}
+
+a:hover {
+  color: #f77f00;
 }
 
 nav a {
-  margin-left: 20px; /* Space between links */
-  text-decoration: none;
-  font-weight: bold;
+  padding-left: 20px;
 }
 
-/* Hover state for links */
-nav a:hover {
-  color: #f77f00;
-  text-decoration: underline; /* Add underline on hover */
+/* Images */
+img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
 }
 
+.image-circle {
+  border: 2px solid #003049;
+  border-radius: 50%;
+}
+
+/* Footer */
+footer p {
+  text-align: center;
+}
+
+/* Other page elements */
+hr {
+  border: 1px solid black;
+}
+
+.header-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-group h1{
+  font-size: 2.5em;
+}
+
+#about-image-intro{  
+    display: flex;
+    flex-direction: row;
+}
+
+.portfolio-group{
+  display: flex;
+  flex-direction: row;
+}
+
+div.portfolio-group section{
+  padding: 0 0 0 2px;
+}
+
+.portfolio-group p{
+  text-align: center;
+  font-size: 14px;
+}
+
+.contact-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-list li{
+  width: 30%;
+}
 
